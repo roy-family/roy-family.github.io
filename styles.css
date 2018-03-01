@@ -160,6 +160,9 @@ fieldset {
     .text-resp{
         font-size:0.7em;
     }
+    .text-resp-x{
+        font-size:0.6em;
+    }
     #jumbo{
         padding-top:30px !important;
     }
