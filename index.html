@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="animate.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+ <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>  
+  <script src="in-view.min.js"></script>
+    <title>Sayak & Madhuparna's Marriage!</title>
+    <style>
+        .invisible{
+            opacity: 0
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+        <div class="container" style="height:70px;">
+            <div class="navi-tabs" style="float:right; text-align:right;     margin-top: 22px; ">
+                <div class="navi-tab lead"><a href="#wedding-time">Time</a></div>
+                <div class="navi-tab lead"><a href="#wedding-location">Venue</a></div>
+                <div class="navi-tab lead"><a href="#wedding-contact">Contact</a></div>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="container" id="jumbo" style="padding-top: 80px;
+    padding-bottom: 200px;">
+        <h3 class="display-3  animated tada"><span class="text-resp">It's Wedding Season!</span></h3>
+        <h3 class="display-4  animated invisible" id="wedding-msg"><span class="text-resp">Supriyo and Lipika Roy are looking forward to have your presense at Sayak and Madhuparna's Marriage Ceremony</span></h3>
+    
+    </div>
+
+
+
+    <div id="wedding-time" class="container text-center"  style="padding-top:40px; padding-bottom: 160px;">
+        <h3 class="display-4"><span class="text-resp">Reception Time</span></h3>
+       
+        <h4 class="display-3" style="font-size:2.1em"><span class="text-resp">6 to 11 PM, <br/><strong style="    font-size: 1.3em;">9th March 2018</strong></span></h4>
+        <br/>
+ <p class="lead" ><span class="text-resp">
+        Countdown</span>
+        </p>
+        <div id="clockdiv">
+        <div>
+            <span class="days"></span>
+            <div class="smalltext">Days</div>
+        </div>
+        <div>
+            <span class="hours"></span>
+            <div class="smalltext">Hours</div>
+        </div>
+        <div>
+            <span class="minutes"></span>
+            <div class="smalltext">Minutes</div>
+        </div>
+        <div>
+            <span class="seconds"></span>
+            <div class="smalltext">Seconds</div>
+        </div>
+        </div>
+
+
+
+    </div>
+
+
+    <div class="container-fluid text-center  animated invisible" id="wedding-location">
+        <h3 class="display-4"><span class="text-resp">Reception Venue</span></h3>
+        <p class="lead"><span class="text-resp">
+ PRINCETON CLUB , 26, PRINCE ANWAR SHAH ROAD , <br/>
+ BADAM TALLA , TOLLYGUANGE, KOLKATA, - 700033</span>
+</p>
+        <div class="map-responsive">
+    <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=princeton%20club&amp" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    </div>
+
+
+
+    <div id="wedding-contact" class="container animated invisible" style="padding-top:40px;">  
+        <h3 class="display-4 text-center">Contact</h3>
+  <form id="contact"  method="post"  action="https://formspree.io/swastikroy1993@gmail.com">
+    <h3>Reach out to us</h3>
+    <fieldset>
+      <input placeholder="Your name" type="text" name="name" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" name="_replyto" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+    </fieldset>
+    
+    <fieldset>
+      <textarea placeholder="Type your message here...." name="message" tabindex="4" required></textarea>
+    </fieldset>
+    <fieldset>
+      <input name="submit" type="submit" value="Send" id="contact-submit" data-submit="...Sending" />
+    </fieldset>
+
+  </form>
+</div>
+
+<div class="footer-bottom">
+<div class="container">
+					<div class="row">
+						<div class="col-sm-6 ">
+							<div class="copyright-text">
+								<p>Copyright © 2018 Roy Family </p>
+							</div>
+						</div> <!-- End Col -->
+						<div class="col-sm-6">							
+							<ul class="social-link pull-right">
+								<!--<li><a href=""><span class="glyphicon glyphicon-heart-empty"></span></a></li>						
+								<li><a href=""><span class="glyphicon glyphicon-heart-empty"></span></a></li>
+								<li><a href=""><span class="glyphicon glyphicon-heart-empty"></span></a></li>
+								<li><a href=""><span class="glyphicon glyphicon-heart-empty"></span></a></li>
+								<li><a href=""><span class="glyphicon glyphicon-heart-empty"></span></a></li>-->
+							</ul>							
+						</div> <!-- End Col -->
+					</div>
+				</div>
+</div>
+    <script>
+
+        
+        $(document).ready(function(){
+          
+            setTimeout(function(){
+                $("#wedding-msg").removeClass("invisible");
+                    $("#wedding-msg").addClass("fadeInUp");
+            }, 1000);
+
+            // Animate to section when nav is clicked
+            $('header a').click(function(e) {
+
+                // Treat as normal link if no-scroll class
+                if ($(this).hasClass('no-scroll')) return;
+
+                e.preventDefault();
+                var heading = $(this).attr('href');
+                var scrollDistance = $(heading).offset().top;
+
+                jQuery('html, body').animate({
+                    scrollTop: scrollDistance + 'px'
+                }, Math.abs(window.pageYOffset - $(heading).offset().top) / 3);
+
+                // Hide the menu once clicked if mobile
+                if ($('header').hasClass('active')) {
+                    $('header, body').removeClass('active');
+                }
+            });
+
+            var shown2 = false;
+            var inViewElems = ["#wedding-contact", "#wedding-location", "#wedding-time"];
+            for(var i in inViewElems){
+                var sel = inViewElems[i];
+                inView(sel)
+                    .on('enter', function(el){
+                        $(el).removeClass("invisible");
+                        $(el).addClass("fadeIn");
+                        shown2 = true;
+                    })
+                    .on('exit', el => {
+                        $(el).addClass("invisible");
+                        $(el).removeClass("fadeIn");
+                });
+            }
+            
+
+            function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse(new Date("Mar 9, 2018 18:0:0")));
+initializeClock('clockdiv', deadline);
+        });
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
