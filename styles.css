@@ -153,7 +153,6 @@ fieldset {
 .navi-tab:hover{
     cursor: pointer;
     font-weight: 400;
-    
 }
 
 @media screen and (max-width: 699px){
@@ -185,6 +184,7 @@ fieldset {
 	border-radius: 3px;
 	background: #00BF96;
 	display: inline-block;
+    margin: 3px;
 }
 
 #clockdiv div > span{
